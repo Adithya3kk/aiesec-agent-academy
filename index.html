@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIESEC Agent Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AIESEC Agent Academy</h1>
+        <p class="tagline">Crack the Code, Master the Mission</p>
+    </header>
+
+    <section id="agent-profile">
+        <div id="agent-info">
+            <h2>Agent: <span id="agent-name">Unknown</span></h2>
+            <p>Progress: <span id="progress-bar">0%</span></p>
+            <button id="save-progress">Save Mission</button>
+            <button id="load-progress">Load Mission</button>
+        </div>
+    </section>
+
+    <section id="mission-dashboard">
+        <h2>Mission Hub</h2>
+        <div class="department-grid">
+            <div class="dept-card" data-dept="ogv">Field Agents (oGV)<span class="status">0/9</span></div>
+            <div class="dept-card" data-dept="igv">Infiltrators (iGV)<span class="status">0/7</span></div>
+            <div class="dept-card" data-dept="tm">HQ Crew (TM)<span class="status">0/5</span></div>
+            <div class="dept-card" data-dept="bd">Deal Decoders (BD)<span class="status">0/7</span></div>
+            <div class="dept-card" data-dept="marcomm">Propaganda Pros (MarComm)<span class="status">0/8</span></div>
+        </div>
+    </section>
+
+    <div id="mission-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h3 id="mission-title">Mission Briefing</h3>
+            <p id="mission-desc">Decrypting data...</p>
+            <div id="mission-game"></div>
+            <button id="complete-mission">Complete Mission</button>
+            <p id="mission-result" style="color: #ff007a; margin-top: 10px;"></p>
+        </div>
+    </div>
+
+    <section id="leaderboard">
+        <h2>Top Agents</h2>
+        <ul id="leaderboard-list"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
