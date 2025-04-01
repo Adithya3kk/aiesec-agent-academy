@@ -84,6 +84,13 @@ button:hover {
     box-shadow: 0 0 20px #00ffcc;
 }
 
+.dept-card.locked {
+    background: #222;
+    border-color: #ff007a;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
 .status {
     float: right;
     color: #ff007a;
@@ -100,11 +107,11 @@ button:hover {
 }
 
 .modal-content {
-    background: #222;
-    margin: 10% auto;
+    background: #111;
+    margin: 5% auto;
     padding: 20px;
-    width: 80%;
-    max-width: 600px;
+    width: 90%;
+    max-width: 700px;
     border-radius: 10px;
     border: 2px solid #ff007a;
     animation: slideIn 0.5s;
@@ -115,6 +122,42 @@ button:hover {
     font-size: 1.5em;
     cursor: pointer;
     color: #ff007a;
+}
+
+#mission-brief {
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #00ffcc;
+}
+
+#mission-game {
+    margin: 15px 0;
+}
+
+#timer {
+    color: #ff007a;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    animation: pulse 1s infinite;
+}
+
+#hint-btn {
+    background: #00ffcc;
+    color: #000;
+    margin-left: 10px;
+}
+
+#hint-btn:hover {
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+#mission-result {
+    color: #ff007a;
+    margin-top: 10px;
 }
 
 #leaderboard {
@@ -143,4 +186,10 @@ button:hover {
 @keyframes slideIn {
     from { transform: translateY(-50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
