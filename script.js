@@ -16,7 +16,7 @@ let agent = {
 document.getElementById("agent-name").textContent = agent.name;
 document.getElementById("agent-points").textContent = agent.points;
 
-// Mission Data (5 questions for oGV, iGTa, iGTe, iGV, Marketing, and BD with varied correct answers)
+// Mission Data (5 questions for oGV, iGTA, iGTe, iGV, Marketing, and BD with varied correct answers)
 const missions = {
     ogv: {
         studyLink: "https://docs.google.com/document/d/1_BireEvcYoUEQbtDrUoOEioyTaoYJWAQe6kiYEl_Rg8/edit?usp=sharing",
@@ -107,7 +107,7 @@ Task: What method are you using to evaluate this?
         questions: [
             {
                 question: `
-Question 1: iGTa Value Proposition
+Question 1: iGTA Value Proposition
 Scenario: A potential iGTA intern asks why they should join the program instead of a local internship.
 
 Task: What is the best response to highlight iGTA’s value?
@@ -124,7 +124,7 @@ Task: What is the best response to highlight iGTA’s value?
             {
                 question: `
 Question 2: Partner Engagement
-Scenario: An iGTa partner company complains that interns lack the necessary skills for their roles.
+Scenario: An iGTA partner company complains that interns lack the necessary skills for their roles.
 
 Task: How should AIESEC address this issue to maintain the partnership?
                 `,
@@ -140,7 +140,7 @@ Task: How should AIESEC address this issue to maintain the partnership?
             {
                 question: `
 Question 3: Cultural Integration
-Scenario: An iGTa intern is struggling to adapt to the host country’s culture, affecting their performance.
+Scenario: An iGTA intern is struggling to adapt to the host country’s culture, affecting their performance.
 
 Task: What should the program do to support the intern?
                 `,
@@ -156,7 +156,7 @@ Task: What should the program do to support the intern?
             {
                 question: `
 Question 4: Internship Standards
-Scenario: A partner company reports that an iGTa intern’s work hours violate local labor laws.
+Scenario: A partner company reports that an iGTA intern’s work hours violate local labor laws.
 
 Task: How should AIESEC respond to ensure compliance?
                 `,
@@ -362,80 +362,80 @@ Task: What should they do next?
         questions: [
             {
                 question: `
-Question 1: Marketing Dummy Question 1
-Scenario: A marketing campaign needs to be launched.
+Question 1: Mission: Brand Integrity Under Attack
+Scenario: Enemy intelligence has attempted to manipulate AIESEC’s brand representation in external media.
 
-Task: What is the first step in planning?
+Task: According to global security protocols, what is the primary brand color of AIESEC that must be upheld at all costs?
                 `,
                 options: {
-                    A: "Post on social media immediately.",
-                    B: "Define the target audience.",
-                    C: "Spend the budget without a plan.",
-                    D: "Ignore market research."
+                    A: "HEX #F85A40 – AIESEC Red, symbolizing action and dynamism.",
+                    B: "HEX #037Ef3 – AIESEC Blue, representing youthful energy and leadership.",
+                    C: "HEX #00C16E – AIESEC Green, signifying global sustainability.",
+                    D: "HEX #FFC845 – AIESEC Gold, reflecting excellence and ambition."
                 },
                 correct: "B",
                 points: 100
             },
             {
                 question: `
-Question 2: Marketing Dummy Question 2
-Scenario: A campaign is underperforming.
+Question 2: Mission: Misinformation Counterstrike
+Scenario: A rogue agency has been spreading false claims about AIESEC’s leadership programs.
 
-Task: What should the team do?
+Task: Identify the official AIESEC font used for branding to neutralize the misinformation.
                 `,
                 options: {
-                    A: "Abandon the campaign.",
-                    B: "Analyze data to identify issues.",
-                    C: "Blame the audience.",
-                    D: "Double the budget without changes."
+                    A: "Roboto",
+                    B: "Raleway",
+                    C: "Lato.",
+                    D: "Montserrat"
                 },
-                correct: "B",
+                correct: "C",
                 points: 100
             },
             {
                 question: `
-Question 3: Marketing Dummy Question 3
-Scenario: A new product needs promotion.
+Question 3: Mission: Unauthorized Media Breach
+Scenario: A counterfeit faction has manipulated the organization’s insignia, compromising its integrity across digital channels.
 
-Task: What channel is most effective?
+Task: Which operational directive ensures that the AIESEC emblem remains a secure, unaltered identifier?
                 `,
                 options: {
-                    A: "Random flyers on the street.",
-                    B: "Targeted social media ads.",
-                    C: "No promotion is needed.",
-                    D: "Word of mouth only."
+                    A: "It is subject to rotational adaptation, provided color integrity is preserved.",
+                    B: "It must always remain in horizontal position with only the two official color variants.",
+                    C: "It is adaptable with graphic enhancements to heighten engagement in target markets.",
+                    D: "It remains horizontally aligned under all conditions, without exception."
                 },
-                correct: "B",
+                correct: "D",
                 points: 100
             },
             {
                 question: `
-Question 4: Marketing Dummy Question 4
-Scenario: A campaign needs to align with AIESEC values.
+Question 4: Mission: Compromised Targeting Matrix
+Scenario: A rival entity has restructured the precision-targeting algorithm used in paid AIESEC promotional campaigns, causing an inefficient allocation of resources.
 
-Task: What should be prioritized?
+Task: Which of the following audience segmentation strategies is the most critical in ensuring optimal lead generation for exchange products?
                 `,
                 options: {
-                    A: "Profit over impact.",
+                    A: "Behavioral segmentation – Prioritizing historical engagement patterns.",
                     B: "Leadership and sustainability messaging.",
                     C: "Ignoring AIESEC’s mission.",
                     D: "Focusing only on sales."
                 },
-                correct: "B",
+                correct: "A",
                 points: 100
             },
             {
                 question: `
-Question 5: Marketing Dummy Question 5
-Scenario: A campaign has finished.
+Question 5: Mission: The Case of the Vanishing Guidelines
+Scenario: A hacking group has deleted a key section of AIESEC’s brand guidelines regarding how the logo should be positioned in relation to other elements. The intelligence team must recover this information.
 
-Task: What is the next step?
+Task: What is the minimum clear space required around the AIESEC logo?
                 `,
                 options: {
-                    A: "Forget about the results.",
-                    B: "Evaluate the campaign’s success.",
-                    C: "Launch another without review.",
-                    D: "Blame the team for any failures."
+                    A: "Twice the height of the silhouettes in the logo",
+                    B: "The height of the letter 'A' in 'AIESEC'",
+                    C: "The width of the 'I' in 'AIESEC'",
+                    D: "Half the height of the entire logo"
                 },
                 correct: "B",
                 points: 100
@@ -447,82 +447,81 @@ Task: What is the next step?
         questions: [
             {
                 question: `
-Question 1: BD Dummy Question 1
-Scenario: A new partnership opportunity arises.
+Question 1: Mission: The Vanishing Prospect
+Scenario: You’ve been tracking a high-value lead for weeks. The contact was warm, but suddenly, they’ve gone silent. Your team needs a strategy to re-engage them without raising suspicion.
 
-Task: What is the first step to NumberFormatException: For input string: "1BD_StudyLink_Dummy"secure it?
+Task: What’s your next move?
                 `,
                 options: {
-                    A: "Sign the deal without research.",
-                    B: "Research the partner’s goals.",
-                    C: "Demand high fees upfront.",
-                    D: "Ignore the opportunity."
+                    A: "Send an email reinforcing the urgency of the deal with a strict deadline.",
+                    B: "Call repeatedly until they respond.",
+                    C: "Disguise your approach—share a case study relevant to their pain points.",
+                    D: "Assume they’re no longer interested and abandon the lead."
+                },
+                correct: "C",
+                points: 100
+            },
+            {
+                question: `
+Question 2: Mission: The Competitor's Playbook
+Scenario: A rival BD agency has been gaining traction, and your intelligence unit reports they’re leveraging partnerships in a new, untapped market. Your leadership expects a counterplay.
+
+Task: What’s your best course of action?
+                `,
+                options: {
+                    A: "Rush into the new market with aggressive pricing to undercut them.",
+                    B: "Conduct competitive analysis to identify gaps in their approach and position your offer uniquely.",
+                    C: "Sabotage their deals by spreading misleading information.",
+                    D: "Ignore the market shift and continue with the current strategy."
                 },
                 correct: "B",
                 points: 100
             },
             {
                 question: `
-Question 2: BD Dummy Question 2
-Scenario: A partner is unhappy with the collaboration.
-
-Task: How should the team respond?
-                `,
-                options: {
-                    A: "End the partnership immediately.",
-                    B: "Schedule a meeting to address concerns.",
-                    C: "Ignore their complaints.",
-                    D: "Blame the partner for the issues."
-                },
-                correct: "B",
-                points: 100
-            },
-            {
-                question: `
-Question 3: BD Dummy Question 3
-Scenario: A potential partner needs convincing.
+Question 3: Mission: The Stagnant Deal
+Scenario: A promising lead has expressed interest in your solution but keeps delaying the contract signing. Your intel suggests they have internal decision-making roadblocks.
 
 Task: What should be highlighted?
                 `,
                 options: {
-                    A: "AIESEC’s global impact and network.",
-                    B: "High costs of collaboration.",
-                    C: "No benefits for the partner.",
-                    D: "AIESEC’s internal challenges."
+                    A: "Follow up with urgency, emphasizing that the deal will expire soon.",
+                    B: "Move on to another lead without pushing further.",
+                    C: "Demand a response immediately to avoid wasting time.",
+                    D: "Identify the key decision-maker and offer additional value to align with their priorities."
                 },
-                correct: "A",
+                correct: "D",
                 points: 100
             },
             {
                 question: `
-Question 4: BD Dummy Question 4
-Scenario: A partnership agreement is being drafted.
+Question 4: Mission: The Covert Partnership
+Scenario: You've secured a high-value partnership with an external organization, but before the deal is locked in, the Partnership Agreement must be drafted. Your job is to ensure the agreement is airtight, benefiting both parties while avoiding loopholes that could compromise AIESEC’s interests.
 
-Task: What should be included?
+Task: What should be included in the agreement to ensure a successful mission?
                 `,
                 options: {
-                    A: "Vague terms with no clarity.",
-                    B: "Clear roles and mutual benefits.",
-                    C: "Only AIESEC’s demands.",
-                    D: "No timeline for deliverables."
+                    A: "Keep terms vague to allow flexibility, even if it leads to misunderstandings.",
+                    B: "Define clear roles, responsibilities, and mutual benefits to ensure alignment.",
+                    C: "Focus only on AIESEC’s demands, disregarding the partner’s expectations.",
+                    D: "Exclude deadlines or timelines to maintain an open-ended commitment."
                 },
                 correct: "B",
                 points: 100
             },
             {
                 question: `
-Question 5: BD Dummy Question 5
-Scenario: A partnership has been successful.
-
-Task: What is the next step?
+Question 5: Mission: The Shadow Clause
+Scenario: A potential partner is eager to sign an agreement, but your intel team spots a hidden clause that could put AIESEC at a disadvantage. The partner insists it’s “just a formality.”
+Task: How do you handle this situation?
                 `,
                 options: {
-                    A: "End the partnership abruptly.",
-                    B: "Propose a new collaboration project.",
-                    C: "Ignore the partner’s feedback.",
-                    D: "Demand more resources."
+                    A: "Sign immediately to secure the deal and address concerns later.",
+                    B: "Ignore the clause—it’s probably not important.",
+                    C: "Conduct a thorough review, negotiate terms, and ensure transparency.",
+                    D: "Confront the partner aggressively, assuming bad intent."
                 },
-                correct: "B",
+                correct: "C",
                 points: 100
             }
         ]
@@ -897,6 +896,9 @@ let leaderboard = [
     { name: "Agent Vizag", points: 450 },
     { name: "Agent Neon", points: 400 }
 ];
+const sheetId = "1Q8aqU88BUvufZp8ZyUmnWjceeZ77DfVwmbKLiQl5VrQ"; // Replace with your Google Sheet ID
+const apiKey = "AIzaSyB55fo5OxQQ3cFCVr_duHTD8hHqrl5FA3k"; // Replace with your API Key
+const range = "Sheet1!A2:C"; // Adjust based on your sheet's structure
 
 function updateLeaderboard() {
     const playerEntry = leaderboard.find(entry => entry.name === agent.name);
