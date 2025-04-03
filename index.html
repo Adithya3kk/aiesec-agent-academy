@@ -16,36 +16,72 @@
         <div id="agent-info">
             <h2>Agent: <span id="agent-name">Unknown</span></h2>
             <p>Progress: <span id="progress-bar">0%</span></p>
-            <p>Points: <span id="agent-points">0</span></p>
-            <button id="save-progress">Save Mission</button>
-            <button id="load-progress">Load Mission</button>
+            <p>Score: <span id="agent-points">0</span></p>
+            <p>Rank: <span id="agent-rank">Rookie</span></p>
+            <button id="save-progress">Save Progress</button>
+            <button id="load-progress">Load Progress</button>
         </div>
     </section>
 
-    <section id="mission-dashboard">
+    <!-- Department Selection Page -->
+    <section id="department-page">
         <h2>Mission Hub</h2>
         <div class="department-grid">
-            <div class="dept-card" data-dept="ogv">Field Agents (oGV)<span class="status">0/9</span></div>
-            <div class="dept-card" data-dept="igv">Infiltrators (iGV)<span class="status">0/7</span></div>
-            <div class="dept-card" data-dept="tm">HQ Crew (TM)<span class="status">0/5</span></div>
-            <div class="dept-card" data-dept="bd">Deal Decoders (BD)<span class="status">0/7</span></div>
-            <div class="dept-card" data-dept="marcomm">Propaganda Pros (MarComm)<span class="status">0/8</span></div>
+            <div class="dept-card" data-dept="ogv">Field Agents (oGV)<span class="status">0/5</span></div>
+            <div class="dept-card" data-dept="igta">Talent Scouts (iGTa)<span class="status">0/5</span></div>
+            <div class="dept-card" data-dept="igte">Global Educators (iGTe)<span class="status">0/5</span></div>
+            <div class="dept-card" data-dept="igv">Incoming Volunteers (iGV)<span class="status">0/5</span></div>
+            <div class="dept-card" data-dept="marketing">Marketing Ops (Marketing)<span class="status">0/5</span></div>
+            <div class="dept-card" data-dept="bd">Business Dev (BD)<span class="status">0/5</span></div>
         </div>
     </section>
 
-    <div id="mission-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">×</span>
-            <h3 id="mission-title">Mission Briefing</h3>
-            <p id="mission-desc">Decrypting data...</p>
-            <p>Time Left: <span id="mission-timer">30</span>s</p>
-            <p>Points: <span id="mission-points">0</span></p>
-            <a id="study-link" href="#" target="_blank">Study Mission Brief</a>
-            <div id="mission-game"></div>
-            <button id="complete-mission">Complete Mission</button>
-            <p id="mission-result" style="color: #ff007a; margin-top: 10px;"></p>
+    <!-- Mission Page -->
+    <section id="mission-page" style="display: none;">
+        <h2>Mission Briefing</h2>
+        <div id="mission-brief">
+            <h3 id="mission-concept-title"></h3>
+            <p id="mission-concept-text"></p>
         </div>
-    </div>
+        <button onclick="startGame()">Proceed to Questions</button>
+    </section>
+
+    <!-- Questions Page -->
+    <section id="questions-page" style="display: none;">
+        <h2>Answer the Questions</h2>
+        <div id="progress-bar-container">
+            <div id="progress" class="progress">0%</div>
+        </div>
+        <div id="question-number"></div>
+        <div id="timer"></div>
+        <div id="question-content"></div>
+        <div id="options">
+            <button class="option-btn" onclick="selectOption('A')">A</button>
+            <button class="option-btn" onclick="selectOption('B')">B</button>
+            <button class="option-btn" onclick="selectOption('C')">C</button>
+            <button class="option-btn" onclick="selectOption('D')">D</button>
+        </div>
+        <button onclick="submitAnswer()">Submit Answer</button>
+        <div id="feedback"></div>
+    </section>
+
+    <!-- Results Page -->
+    <section id="results-page" style="display: none;">
+        <h2>Mission Complete!</h2>
+        <div id="total-score"></div>
+        <div id="overall-feedback"></div>
+        <h3>Your Answers:</h3>
+        <div id="answers-list"></div>
+        <button onclick="showHistory()">View Past Missions</button>
+        <button onclick="startNewGame()">New Mission</button>
+    </section>
+
+    <!-- History Page -->
+    <section id="history-page" style="display: none;">
+        <h2>Past Missions</h2>
+        <div id="history-list"></div>
+        <button onclick="startNewGame()">New Mission</button>
+    </section>
 
     <section id="leaderboard">
         <h2>Top Agents</h2>
