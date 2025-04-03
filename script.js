@@ -16,7 +16,7 @@ let agent = {
 document.getElementById("agent-name").textContent = agent.name;
 document.getElementById("agent-points").textContent = agent.points;
 
-// Mission Data (5 questions for oGV, iGTA, iGTe, iGV, Marketing, and BD with varied correct answers)
+// Mission Data (5 questions for oGV, iGTa, iGTe, iGV, Marketing, and BD with varied correct answers)
 const missions = {
     ogv: {
         studyLink: "https://docs.google.com/document/d/1_BireEvcYoUEQbtDrUoOEioyTaoYJWAQe6kiYEl_Rg8/edit?usp=sharing",
@@ -103,14 +103,14 @@ Task: What method are you using to evaluate this?
         ]
     },
     igta: {
-        studyLink: "https://docs.google.com/document/d/1iGTA_StudyLink_Dummy/edit?usp=sharing",
+        studyLink: "https://docs.google.com/document/d/1iGTa_StudyLink_Dummy/edit?usp=sharing",
         questions: [
             {
                 question: `
-Question 1: iGTA Value Proposition
-Scenario: A potential iGTA intern asks why they should join the program instead of a local internship.
+Question 1: iGTa Value Proposition
+Scenario: A potential iGTa intern asks why they should join the program instead of a local internship.
 
-Task: What is the best response to highlight iGTA’s value?
+Task: What is the best response to highlight iGTa’s value?
                 `,
                 options: {
                     A: "It offers a higher salary than local internships.",
@@ -124,7 +124,7 @@ Task: What is the best response to highlight iGTA’s value?
             {
                 question: `
 Question 2: Partner Engagement
-Scenario: An iGTA partner company complains that interns lack the necessary skills for their roles.
+Scenario: An iGTa partner company complains that interns lack the necessary skills for their roles.
 
 Task: How should AIESEC address this issue to maintain the partnership?
                 `,
@@ -140,7 +140,7 @@ Task: How should AIESEC address this issue to maintain the partnership?
             {
                 question: `
 Question 3: Cultural Integration
-Scenario: An iGTA intern is struggling to adapt to the host country’s culture, affecting their performance.
+Scenario: An iGTa intern is struggling to adapt to the host country’s culture, affecting their performance.
 
 Task: What should the program do to support the intern?
                 `,
@@ -156,7 +156,7 @@ Task: What should the program do to support the intern?
             {
                 question: `
 Question 4: Internship Standards
-Scenario: A partner company reports that an iGTA intern’s work hours violate local labor laws.
+Scenario: A partner company reports that an iGTa intern’s work hours violate local labor laws.
 
 Task: How should AIESEC respond to ensure compliance?
                 `,
@@ -171,8 +171,8 @@ Task: How should AIESEC respond to ensure compliance?
             },
             {
                 question: `
-Question 5: Measuring iGTA Impact
-Scenario: AIESEC wants to showcase iGTA’s impact on professional development to attract more partners.
+Question 5: Measuring iGTa Impact
+Scenario: AIESEC wants to showcase iGTa’s impact on professional development to attract more partners.
 
 Task: What strategy can measure and communicate this impact?
                 `,
